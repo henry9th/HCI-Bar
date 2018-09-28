@@ -9,9 +9,12 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 //BarVle
+<<<<<<< HEAD
     private static final String TAG = MainActivity.class.getSimpleName();
     Button foodButton;
 
+=======
+>>>>>>> ff8f1cd2ce3b0bfa9aabc8bf001aa9679ed5d8b6
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
