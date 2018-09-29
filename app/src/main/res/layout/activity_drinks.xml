@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrinksActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="70"
+        android:paddingLeft="15dp"
+        android:text="DRINKS"
+        android:textSize="50sp"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="100"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:text="WINE"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="100"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button4"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:text="SPIRITS"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="100"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:text="BEER"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="100"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/button5"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:text="COCKTAILS"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="384dp"
+        android:layout_height="100"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:text="CHAMPAGNE"
+        android:textSize="30sp" />
+
+</RelativeLayout>

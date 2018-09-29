@@ -1,13 +1,15 @@
-package org.techtown.barvle;
+package org.techtown.barvel;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class foodMenuOne extends AppCompatActivity {
+public class FoodActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_food_menu_one);
+        setContentView(R.layout.activity_foods);
+        //Okay
+
     }
 }
