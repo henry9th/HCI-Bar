@@ -1,4 +1,4 @@
-package org.techtown.Barvel;
+package org.techtown.barvel;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-//BarVle
+
     private static final String TAG = MainActivity.class.getSimpleName();
     Button foodButton;
 
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Log.d(TAG, "Yes, I just clicked my button");
                 //intent go to next page please
-                startActivity(new Intent(MainActivity.this, foodMenuOne.class));
+                startActivity(new Intent(MainActivity.this, FoodActivity.class));
 //hi everyone
             }
         });
