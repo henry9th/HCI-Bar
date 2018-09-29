@@ -16,9 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="org.techtown.barvel.FoodActivity">
+        <activity android:name="org.techtown.barvel.FoodActivity"> </activity>
+        <activity android:name="org.techtown.barvel.DrinksActivity"> </activity>
+        <activity android:name="org.techtown.barvel.DrinksListActivity"> </activity>
 
-        </activity>
+
     </application>
 
 </manifest>
