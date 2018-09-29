@@ -11,5 +11,6 @@ public class foodMenuOne extends AppCompatActivity {
         setContentView(R.layout.activity_food_menu_one);
         //Okay
 
+
     }
 }
