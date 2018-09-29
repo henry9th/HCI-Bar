@@ -1,4 +1,4 @@
-package org.techtown.barvle;
+package org.techtown.Barvel;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,5 +9,7 @@ public class foodMenuOne extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_food_menu_one);
+        //Okay
+
     }
 }
