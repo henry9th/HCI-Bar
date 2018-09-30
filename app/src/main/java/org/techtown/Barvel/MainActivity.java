@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     public void onClickNext(View v) {
-        Intent intent = new Intent(this, CartActivity.class);
+        Intent intent = new Intent(this, DrinksActivity.class);
         startActivity(intent);
     }
 
