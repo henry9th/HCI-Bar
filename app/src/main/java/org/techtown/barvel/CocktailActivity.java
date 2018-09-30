@@ -3,11 +3,11 @@ package org.techtown.barvel;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class favoriteScreen extends AppCompatActivity {
+public class CocktailActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fav_screen);
+        setContentView(R.layout.activity_cocktail);
     }
 }
