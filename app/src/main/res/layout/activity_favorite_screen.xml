@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="org.techtown.Barvel.historyScreen">
+    tools:context=".favoriteScreen">
 
     <TextView
-        android:id="@+id/historyItem"
+        android:id="@+id/historyItem2"
         android:layout_width="184dp"
         android:layout_height="37dp"
         android:layout_alignParentStart="true"
@@ -23,9 +23,8 @@
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
 
-
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView2"
         android:layout_width="102dp"
         android:layout_height="136dp"
         android:layout_marginEnd="8dp"
@@ -36,7 +35,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textView4"
         android:layout_width="181dp"
         android:layout_height="36dp"
         android:layout_marginLeft="12dp"
@@ -48,7 +47,7 @@
         app:layout_constraintTop_toBottomOf="@+id/historyItem" />
 
     <TextView
-        android:id="@+id/backGroundColor"
+        android:id="@+id/backGroundColor2"
         android:layout_width="406dp"
         android:layout_height="69dp"
         android:layout_marginTop="72dp"
@@ -57,7 +56,7 @@
         tools:layout_editor_absoluteX="2dp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/textView7"
         android:layout_width="47dp"
         android:layout_height="28dp"
         android:layout_marginLeft="20dp"
@@ -70,7 +69,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/textView8"
         android:layout_width="47dp"
         android:layout_height="32dp"
         android:layout_marginLeft="20dp"
@@ -81,17 +80,4 @@
         android:textColor="@android:color/white"
         app:layout_constraintStart_toEndOf="@+id/historyItem"
         app:layout_constraintTop_toBottomOf="@+id/textView5" />
-
-
 </android.support.constraint.ConstraintLayout>
-
-<!--  <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-        -->
-
