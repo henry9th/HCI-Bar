@@ -6,7 +6,7 @@ import android.support.v7.widget.Toolbar;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class historyScreen extends AppCompatActivity {
+public class HistoryActivity extends AppCompatActivity {
 
     TextView backGroundColor;
 

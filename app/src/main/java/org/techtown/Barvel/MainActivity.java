@@ -87,9 +87,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         if (id == R.id.nav_orders) {
             // Handle the camera action
         } else if (id == R.id.nav_favorites) {
-
+            Intent intent = new Intent(this, FavoriteActivity.class);
+            startActivity(intent);
         } else if (id == R.id.nav_history) {
-
+            Intent intent = new Intent(this, HistoryActivity.class);
+            startActivity(intent);
         }
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
