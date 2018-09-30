@@ -1,9 +1,7 @@
-package org.techtown.Barvel;
+package org.techtown.barvel;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
-import org.techtown.barvel.R;
 
 public class CocktailActivity extends AppCompatActivity {
 

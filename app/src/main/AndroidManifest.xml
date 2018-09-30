@@ -19,8 +19,8 @@
         <activity android:name=".FoodActivity" />
         <activity android:name=".DrinksActivity" />
         <activity android:name=".DrinksListActivity" />
-        <activity android:name="org.techtown.Barvel.CocktailActivity" />
-        <activity android:name="org.techtown.Barvel.FavoriteActivity"></activity>
+        <activity android:name=".CocktailActivity" />
+        <activity android:name="org.techtown.barvel.FavoriteActivity"></activity>
     </application>
 
 </manifest>
