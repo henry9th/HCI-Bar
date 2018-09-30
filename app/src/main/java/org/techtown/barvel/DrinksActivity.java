@@ -3,6 +3,7 @@ package org.techtown.barvel;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class DrinksActivity extends AppCompatActivity {
 
@@ -12,10 +13,9 @@ public class DrinksActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_drinks);
-
     }
 
-    public void onClickNext() {
+    public void onClickNext(View v) {
         Intent intent = new Intent(this, DrinksListActivity.class);
         startActivity(intent);
     }
