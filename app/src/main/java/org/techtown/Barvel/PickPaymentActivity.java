@@ -1,5 +1,6 @@
 package org.techtown.barvel;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,15 +16,12 @@ public class PickPaymentActivity extends AppCompatActivity {
         setContentView(R.layout.activity_pick_payment);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
     }
 
+    public void moveOn(View v){
+        Intent myIntent = new Intent(PickPaymentActivity.this, PaidActivity.class);
+        PickPaymentActivity.this.startActivity(myIntent);
+    }
 }
