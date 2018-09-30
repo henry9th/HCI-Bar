@@ -3,7 +3,7 @@ package org.techtown.barvel;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class favoriteScreen extends AppCompatActivity {
+public class FavoriteActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
