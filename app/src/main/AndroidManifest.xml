@@ -23,10 +23,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".HistoryActivity" />
+        <activity android:name=".CartActivity">
+
+        </activity>
+        <activity android:name=".PickPaymentActivity"></activity>
+        <activity android:name=".PaidActivity"></activity>
         <activity android:name=".Pop"
             android:theme="@style/AppTheme.CustomTheme"
         ></activity>
     </application>
+
+
 
 </manifest>
