@@ -1,6 +1,12 @@
 package org.techtown.barvel;
 
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
+import android.os.Handler;
+import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,16 +17,17 @@ public class FavoriteActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fav_screen);
+        setContentView(R.layout.activity_favorite_screen);
 
-        Button buttona = (Button) findViewById(R.id.buttona);
 
-        buttona.setOnClickListener(new View.OnClickListener() {
+        new Handler().postDelayed(new Runnable() {
             @Override
-            public void onClick(View v) {
-                startActivity(new Intent(FavoriteActivity.this, Pop.class));
-            }
-        });
+            public void run() {
 
+
+            }
+        }, 6000);
     }
+
 }
+

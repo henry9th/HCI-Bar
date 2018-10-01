@@ -17,14 +17,16 @@
         <activity android:name=".DrinksListActivity" />
         <activity android:name=".CocktailActivity" />
         <activity android:name=".FavoriteActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
-        <activity android:name=".HistoryActivity" />
+        <activity android:name=".HistoryActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
         <activity android:name=".CartActivity">
 
         </activity>
