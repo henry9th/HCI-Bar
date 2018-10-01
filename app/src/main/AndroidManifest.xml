@@ -10,18 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
+
+        </activity>
+        <activity android:name=".FoodActivity" />
+        <activity android:name=".DrinksActivity" />
+        <activity android:name=".DrinksListActivity" />
+        <activity android:name=".CocktailActivity" />
+        <activity android:name=".FavoriteActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FoodActivity" />
-        <activity android:name=".DrinksActivity" />
-        <activity android:name=".DrinksListActivity" />
-        <activity android:name="org.techtown.barvel.CocktailActivity" />
-        <activity android:name="org.techtown.barvel.FavoriteActivity"></activity>
-        <activity android:name="org.techtown.barvel.HistoryActivity"></activity>
+        <activity android:name=".HistoryActivity" />
+        <activity android:name=".Pop"
+            android:theme="@style/AppTheme.CustomTheme"
+        ></activity>
     </application>
 
 </manifest>

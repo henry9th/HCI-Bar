@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context="org.techtown.barvel.CocktailActivity">
+
+    <ImageView
+            android:id="@+id/oldFashionedImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/old_fashioned"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp"
+        android:contentDescription="@string/todo" />
+
+    <TextView
+        android:id="@+id/oldFashionedText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:text="@string/old_fashioned"
+        android:layout_toRightOf="@id/oldFashionedImage"
+        android:textSize="30sp"
+        android:paddingStart="15dp"
+        android:layout_toEndOf="@id/oldFashionedImage" />
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="350dp"
+        app:srcCompat="@android:drawable/btn_star_big_off"
+        android:contentDescription="TODO"
+        android:layout_marginStart="350dp" />
+
+    <TextView
+        android:id="@+id/oldFashionedIngred"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:layout_toRightOf="@id/oldFashionedImage"
+        android:layout_below="@id/oldFashionedText"
+        android:text="@string/bourbon_angostura_bitters_sugar_water"
+        android:textSize="16sp"
+        android:layout_toEndOf="@id/oldFashionedImage" />
+
+
+    </RelativeLayout>
+</ScrollView>
