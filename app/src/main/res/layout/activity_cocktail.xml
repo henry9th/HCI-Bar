@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/ScrollView01"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
@@ -11,36 +12,44 @@
         android:orientation="vertical"
         tools:context="org.techtown.Barvel.CocktailActivity">
 
-
         <ImageView
                 android:id="@+id/oldFashionedImage"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:scaleType="centerCrop"
-                app:srcCompat="@drawable/oldFashioned"
+                app:srcCompat="@drawable/old_fashioned"
                 tools:layout_editor_absoluteX="0dp"
                 tools:layout_editor_absoluteY="16dp" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_toRightOf="@+id/oldFashionedImage"
-            android:orientation="vertical">
             <TextView
                 android:id="@+id/oldFashionedText"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:paddingLeft="15dp"
                 android:text="Old Fashioned"
+                android:layout_toRightOf="@id/oldFashionedImage"
                 android:textSize="30sp" />
+        <!--
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="48dp"
+            android:layout_marginLeft="48dp"
+            android:layout_marginTop="84dp"
+            android:layout_toRightOf="@id/oldFashionedText"
+            app:srcCompat="@android:drawable/btn_star_big_off" />-->
+
             <TextView
                 android:id="@+id/oldFashionedIngred"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:paddingLeft="15dp"
+                android:layout_toRightOf="@id/oldFashionedImage"
+                android:layout_below="@id/oldFashionedText"
                 android:text="Bourbon, Angostura Bitters, Sugar, Water"
                 android:textSize="16sp" />
-        </LinearLayout>
 
         <ImageView
             android:id="@+id/cosmoImage"
@@ -167,7 +176,7 @@
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/bloodyMary"
+            app:srcCompat="@drawable/bloody_mary"
             android:layout_below="@+id/manhattanImage"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="16dp" />
@@ -251,5 +260,7 @@
             android:layout_toRightOf="@+id/maiImage"
             android:text="White Rum, Dark Rum, Lime Juice, Orange Curacao, Orgeat Syrup"
             android:textSize="16sp" />
+
+
     </RelativeLayout>
 </ScrollView>
