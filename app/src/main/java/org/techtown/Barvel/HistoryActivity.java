@@ -18,8 +18,6 @@ public class HistoryActivity extends AppCompatActivity {
         backGroundColor = (TextView) findViewById(R.id.backGroundColor);
       //  backGroundColor.setBackgroundResource(R.color.colorPrimary);
 
-
-
 //        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
  //       setSupportActionBar(myToolbar);
     }
