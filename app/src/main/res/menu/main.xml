@@ -9,7 +9,6 @@
         android:icon="@drawable/cart"
         app:showAsAction="always"
         android:title="cart"
-        android:actionLayout="@layout/"
         />
 
 </menu>
