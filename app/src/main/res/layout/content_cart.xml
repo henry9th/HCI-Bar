@@ -25,25 +25,24 @@
 
     <ImageView
         android:id="@+id/cart_image1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
         app:layout_constraintStart_toEndOf="@+id/cart_delete1"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:srcCompat="@drawable/mojito"
+        tools:layout_editor_absoluteY="8dp" />
 
     <ImageView
         android:id="@+id/cart_image2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toEndOf="@+id/cart_delete2"
         app:layout_constraintTop_toBottomOf="@+id/cart_line1"
-        app:srcCompat="@mipmap/ic_launcher" />
+        app:srcCompat="@drawable/margarita" />
 
     <TextView
         android:id="@+id/cart_name1"
