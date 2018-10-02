@@ -26,9 +26,10 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="500dp"
+            android:layout_height="600dp"
+            android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
-            android:layout_centerVertical="true">
+            android:layout_marginTop="80dp">
 
             <ImageView
                 android:id="@+id/beerImage"
@@ -36,7 +37,7 @@
                 android:layout_height="100dp"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/textView"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
                 android:onClick="onClickNext"
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/beer"
@@ -49,7 +50,7 @@
                 android:layout_height="100dp"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/beerImage"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
                 android:onClick="onClickNext"
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/spirits"
@@ -75,7 +76,7 @@
                 android:layout_height="100dp"
                 android:layout_alignParentStart="true"
                 android:layout_below="@+id/spiritImage"
-                android:layout_marginTop="0dp"
+                android:layout_marginTop="10dp"
                 android:scaleType="centerCrop"
                 app:srcCompat="@drawable/cocktail"
                 tools:layout_editor_absoluteX="0dp"
@@ -106,6 +107,54 @@
                 android:textColor="@android:color/white"
                 android:textSize="50sp" />
 
+            <ImageView
+                android:id="@+id/wineImage"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/cocktailImage"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/wine"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <ImageView
+                android:id="@+id/sodaImage"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/wineImage"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/soda"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/nonAlcText"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/sodaImage"
+                android:gravity="center"
+                android:onClick="onClickNext"
+                android:text="NON-ALCOHOLIC"
+                android:textColor="@android:color/white"
+                android:textSize="45sp" />
+
+            <TextView
+                android:id="@+id/wineText"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/wineImage"
+                android:gravity="center"
+                android:onClick="onClickNext"
+                android:text="WINE"
+                android:textColor="@android:color/white"
+                android:textSize="50sp" />
+
         </RelativeLayout>
 
 
@@ -118,8 +167,9 @@
         android:layout_gravity="start"
         android:background="@android:color/black"
         android:fitsSystemWindows="true"
-        app:itemTextAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:visibility="gone"
         app:headerLayout="@layout/nav_header_main"
+        app:itemTextAppearance="@style/TextAppearance.AppCompat.Display1"
         app:itemTextColor="@android:color/background_light"
         app:menu="@menu/activity_main_drawer" />
 
