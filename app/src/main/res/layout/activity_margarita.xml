@@ -26,6 +26,17 @@
             android:layout_height="match_parent"
             />
 
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:onClick="toShoppingCart"
+            app:srcCompat="@drawable/shoppingcart" />
+
+
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -187,7 +198,7 @@
                 android:hint="Type your comments here."
                 android:background="@color/white"
                 android:inputType="text"
-                android:textColor="@color/white">
+                android:textColor="@color/black">
             </EditText>
 
             <ImageView

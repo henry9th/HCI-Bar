@@ -34,12 +34,21 @@
             app:srcCompat="@drawable/food" />
 
         <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:onClick="toShoppingCart"
+            app:srcCompat="@drawable/shoppingcart" />
+
+        <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
             android:layout_height="295dp"
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true"
-            android:layout_marginTop="60dp"
+            android:layout_marginTop="70dp"
             android:onClick="onClickNext"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/drinks" />

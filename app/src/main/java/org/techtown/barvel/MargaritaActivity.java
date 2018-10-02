@@ -47,8 +47,8 @@ public class MargaritaActivity extends AppCompatActivity implements NavigationVi
                 toolbar.getChildAt(i).setScaleY(3.0f);
             } else {
                 toolbar.getChildAt(i).setPadding(50,10,0,0);
-                toolbar.getChildAt(i).setScaleY(2.5f);
-                toolbar.getChildAt(i).setScaleX(2.5f);
+                toolbar.getChildAt(i).setScaleY(2.25f);
+                toolbar.getChildAt(i).setScaleX(2.25f);
 
             }
         }

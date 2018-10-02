@@ -24,12 +24,23 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentTop="true" />
 
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:onClick="toShoppingCart"
+            app:srcCompat="@drawable/shoppingcart" />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="600dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
             android:layout_marginTop="75dp">
+
+
 
             <ImageView
                 android:id="@+id/beerImage"

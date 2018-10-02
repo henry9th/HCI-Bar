@@ -31,7 +31,7 @@ public class FavoriteActivity extends AppCompatActivity implements NavigationVie
         setContentView(R.layout.activity_favorite_screen);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar2);
-        toolbar.setTitle("   FAVORITE");
+        toolbar.setTitle("   FAVORITES");
         setSupportActionBar(toolbar);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -49,11 +49,14 @@ public class FavoriteActivity extends AppCompatActivity implements NavigationVie
         for (int i = 0; i < toolbar.getChildCount(); i++) {
             if (toolbar.getChildAt(i) instanceof ImageButton) {
                 toolbar.getChildAt(i).setPadding(20,10,0,0);
+                toolbar.getChildAt(i).setScaleX(3.0f);
+                toolbar.getChildAt(i).setScaleY(3.0f);
             } else {
                 toolbar.getChildAt(i).setPadding(20,10,0,0);
+                toolbar.getChildAt(i).setScaleX(2.25f);
+                toolbar.getChildAt(i).setScaleY(2.25f);
             }
-            toolbar.getChildAt(i).setScaleX(3.0f);
-            toolbar.getChildAt(i).setScaleY(3.0f);
+
         }
     }
 

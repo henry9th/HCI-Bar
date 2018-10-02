@@ -105,5 +105,11 @@ public class CocktailActivity extends AppCompatActivity implements NavigationVie
         return true;
     }
 
+    public void toShoppingCart(View view) {
+        Intent intent = new Intent(this, CartActivity.class);
+        startActivityForResult(intent, 1);
+    }
+
+
 
 }

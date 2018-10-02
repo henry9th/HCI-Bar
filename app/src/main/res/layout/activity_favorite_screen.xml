@@ -15,12 +15,31 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
+
+
     <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="65dp">
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:onClick="toShoppingCart"
+            app:srcCompat="@drawable/shoppingcart" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        >
 
         <ImageView
             android:id="@+id/oldFashionedImage"
@@ -147,7 +166,7 @@
             android:text="Tequila, Lime Juice, Cointreau"
             android:textColor="@android:color/white"
             android:textSize="16sp" />
-
+    </RelativeLayout>
 
     </RelativeLayout>
 
