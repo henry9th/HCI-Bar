@@ -19,7 +19,8 @@
         <activity android:name=".FoodActivity" />
         <activity android:name=".DrinksActivity" />
         <activity android:name=".CocktailActivity" />
-        <activity android:name=".FavoriteActivity">
+        <activity android:name=".FavoriteActivity"/>
+        <activity android:name=".MargaritaActivity">
 
         </activity>
 
