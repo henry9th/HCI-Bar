@@ -10,11 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".FoodActivity" />
         <activity android:name=".DrinksActivity" />
@@ -31,7 +27,13 @@
 
         </activity>
         <activity android:name=".PickPaymentActivity"></activity>
-        <activity android:name=".PaidActivity"></activity>
+        <activity android:name=".PaidActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <activity android:name=".Pop"
             android:theme="@style/AppTheme.CustomTheme"

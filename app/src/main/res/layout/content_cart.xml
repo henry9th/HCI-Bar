@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#757575"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".CartActivity"
     tools:showIn="@layout/activity_cart">
@@ -68,7 +69,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="Cosmopolitan"
+        android:text="Margerita"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/cart_qty1"
@@ -99,7 +100,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:text="Vodka, Triple Sec, Cranberry juice"
+        android:text="Tequila, Lime Juice, Cointreau"
         app:layout_constraintEnd_toStartOf="@+id/cart_qty2"
         app:layout_constraintStart_toEndOf="@+id/cart_image2"
         app:layout_constraintTop_toBottomOf="@+id/cart_name2" />
@@ -138,9 +139,10 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
         android:text="150$"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/cart_paybutton"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -196,8 +198,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginRight="6dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:text="Total"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
