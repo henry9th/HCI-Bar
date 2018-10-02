@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black"
     tools:context="org.techtown.barvel.MargaritaActivity">
 
     <ImageView
@@ -21,6 +22,7 @@
         android:layout_width="wrap_content"
         android:layout_height="50dp"
         android:paddingLeft="10dp"
+        android:textColor="@color/white"
         android:text="Margarita"
         android:layout_toRightOf="@+id/margaritaImage"
         android:textSize="35sp"/>
@@ -36,6 +38,7 @@
     <TextView
         android:id="@+id/margaritaIngred"
         android:layout_width="match_parent"
+        android:textColor="@color/white"
         android:layout_height="50dp"
         android:paddingLeft="15dp"
         android:layout_below="@+id/margaritaText"
@@ -48,13 +51,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/margaritaIngred"
+        android:textColor="@color/white"
         android:layout_marginLeft="0dp"
         android:layout_marginTop="0dp"
         android:layout_toRightOf="@+id/margaritaImage"
         android:paddingLeft="15dp"
         android:paddingTop="35dp"
         android:text="$25 HKD"
-        android:textSize="25sp" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/decrease"
@@ -73,6 +77,7 @@
     <TextView
         android:id="@+id/integer_number"
         android:layout_width="wrap_content"
+        android:textColor="@color/white"
         android:layout_height="51dp"
         android:layout_alignTop="@+id/increase"
         android:layout_alignParentEnd="true"
@@ -98,6 +103,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:layout_below="@id/margaritaImage"
         android:paddingTop="10dp"
         android:paddingLeft="10dp"
@@ -117,22 +123,34 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="18dp"
             android:id="@+id/noIce"
+            android:buttonTint="@color/white"
+            android:textColor="@color/white"
             android:text="No Ice"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="18dp"
             android:id="@+id/lightIce"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
             android:text="Light Ice"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="18dp"
             android:id="@+id/normalIce"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
             android:checked="true"
             android:text="Normal"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
             android:id="@+id/extraIce"
             android:text="Extra Ice"/>
 
@@ -143,6 +161,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/ice"
         android:paddingLeft="5dp"
+        android:textColor="@color/white"
         android:id="@+id/tequilaLevel"
         android:text="Tequila:"
         android:textSize="25dp"
@@ -151,6 +170,7 @@
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:orientation="horizontal"
         android:layout_below="@id/tequilaLevel"
         android:id="@+id/tequila"
@@ -159,17 +179,26 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
             android:id="@+id/lessTequila"
             android:text="Less"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
             android:id="@+id/normalTequila"
             android:checked="true"
             android:text="Normal"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
             android:id="@+id/extraTequila"
             android:text="More"/>
 
@@ -180,6 +209,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/tequila"
         android:paddingLeft="5dp"
+        android:buttonTint="@color/white"
+        android:textColor="@color/white"
         android:id="@+id/limeLevel"
         android:text="Lime Juice:"
         android:textSize="25dp"
@@ -188,6 +219,8 @@
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:buttonTint="@color/white"
         android:orientation="horizontal"
         android:layout_below="@id/limeLevel"
         android:id="@+id/lime"
@@ -196,17 +229,26 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
             android:id="@+id/lessLime"
             android:text="Less"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
             android:id="@+id/normalLime"
             android:checked="true"
             android:text="Normal"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
             android:id="@+id/extraLime"
             android:text="More"/>
 
@@ -218,6 +260,7 @@
         android:layout_below="@id/lime"
         android:paddingLeft="5dp"
         android:text="Cointreau:"
+        android:textColor="@color/white"
         android:textSize="25dp"
         android:id="@+id/coinLevel"
         android:textStyle="bold"/>
@@ -225,6 +268,8 @@
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:buttonTint="@color/white"
         android:orientation="horizontal"
         android:layout_below="@id/coinLevel"
         android:id="@+id/coin"
@@ -233,16 +278,25 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:buttonTint="@color/white"
             android:id="@+id/lessCoin"
             android:text="Less"/>
         <RadioButton
             android:layout_width="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
             android:layout_height="wrap_content"
             android:id="@+id/normalCoin"
             android:checked="true"
             android:text="Normal"/>
         <RadioButton
             android:layout_width="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
             android:layout_height="wrap_content"
             android:id="@+id/extraCoin"
             android:text="More"/>
@@ -254,6 +308,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/coin"
         android:paddingTop="20dp"
+        android:textColor="@color/white"
         android:id="@+id/comments"
         android:paddingLeft="10dp"
         android:text="Additonal Comments:"
@@ -263,6 +318,7 @@
         android:layout_width="400dp"
         android:layout_height="48dp"
         android:layout_below="@+id/comments"
+        android:textColor="@color/white"
         android:layout_marginTop="6dp"
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp" />

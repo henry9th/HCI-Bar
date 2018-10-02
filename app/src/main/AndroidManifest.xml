@@ -19,7 +19,8 @@
         <activity android:name=".FoodActivity" />
         <activity android:name=".DrinksActivity" />
         <activity android:name=".CocktailActivity" />
-        <activity android:name=".FavoriteActivity">
+        <activity android:name=".FavoriteActivity"/>
+        <activity android:name=".MargaritaActivity">
 
         </activity>
 
@@ -31,6 +32,7 @@
         </activity>
         <activity android:name=".PickPaymentActivity"></activity>
         <activity android:name=".PaidActivity"></activity>
+
         <activity android:name=".Pop"
             android:theme="@style/AppTheme.CustomTheme"
         ></activity>

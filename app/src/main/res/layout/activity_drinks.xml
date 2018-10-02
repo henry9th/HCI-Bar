@@ -1,92 +1,126 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    app:theme="@style/drawer"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DrinksActivity">
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
 
-    <TextView
-        android:id="@+id/textView"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:paddingLeft="15dp"
-        android:text="DRINKS"
-        android:textSize="50sp" />
+        android:layout_height="match_parent"
+        android:background="?android:attr/colorForeground"
+        tools:context=".DrinksActivity">
 
-    <ImageView
-        android:id="@+id/beerImage"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView"
-        android:onClick="onClickNext"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/beer"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" />
+        <include
+            layout="@layout/app_bar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
 
-    <TextView
-        android:id="@+id/beerText"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/textView"
-        android:gravity="center"
-        android:onClick="onClickNext"
-        android:text="BEER"
-        android:textColor="@android:color/white"
-        android:textSize="50sp" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true">
+
+            <ImageView
+                android:id="@+id/beerImage"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView"
+                android:layout_marginBottom="10dp"
+                android:onClick="onClickNext"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/beer"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <ImageView
+                android:id="@+id/spiritImage"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/beerImage"
+                android:layout_marginBottom="10dp"
+                android:onClick="onClickNext"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/spirits"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/beerText"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:onClick="onClickNext"
+                android:text="BEER"
+                android:textColor="@android:color/white"
+                android:textSize="50sp" />
+
+            <ImageView
+                android:id="@+id/cocktailImage"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/spiritImage"
+                android:layout_marginTop="0dp"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/cocktail"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <TextView
+                android:id="@+id/cocktailText"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/cocktailImage"
+                android:gravity="center"
+                android:onClick="onClickNext"
+                android:text="COCKTAIL"
+                android:textColor="@android:color/white"
+                android:textSize="50sp" />
+
+            <TextView
+                android:id="@+id/spiritText"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/beerImage"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:onClick="onClickNext"
+                android:text="SPIRIT"
+                android:textColor="@android:color/white"
+                android:textSize="50sp" />
+
+        </RelativeLayout>
 
 
-    <ImageView
-        android:id="@+id/spiritImage"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/beerImage"
-        android:onClick="onClickNext"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/spirits"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" />
+    </RelativeLayout>
 
-    <TextView
-        android:id="@+id/spiritText"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/beerImage"
-        android:gravity="center"
-        android:onClick="onClickNext"
-        android:text="SPIRIT"
-        android:textColor="@android:color/white"
-        android:textSize="50sp" />
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/black"
+        android:fitsSystemWindows="true"
+        app:itemTextAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:headerLayout="@layout/nav_header_main"
+        app:itemTextColor="@android:color/background_light"
+        app:menu="@menu/activity_main_drawer" />
 
-
-    <ImageView
-        android:id="@+id/cocktailImage"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/spiritImage"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/cocktail"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" />
-
-    <TextView
-        android:id="@+id/cocktailText"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/spiritImage"
-        android:gravity="center"
-        android:onClick="onClickNext"
-        android:text="COCKTAIL"
-        android:textColor="@android:color/white"
-        android:textSize="50sp" />
-
-
-
-</RelativeLayout>
+</android.support.v4.widget.DrawerLayout>
