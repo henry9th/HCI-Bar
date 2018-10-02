@@ -16,7 +16,7 @@ public class DrinksActivity extends AppCompatActivity {
     }
 
     public void onClickNext(View v) {
-        Intent intent = new Intent(this, DrinksListActivity.class);
+        Intent intent = new Intent(this, CocktailActivity.class);
         startActivity(intent);
     }
 }
