@@ -89,6 +89,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 //            return true;
 //        }
 
+        Intent intent = new Intent(this, CartActivity.class);
+        startActivity(intent);
+
         return super.onOptionsItemSelected(item);
     }
 
