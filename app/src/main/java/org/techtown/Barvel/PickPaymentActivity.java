@@ -8,21 +8,20 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-public class CartActivity extends AppCompatActivity {
+public class PickPaymentActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cart);
+        setContentView(R.layout.activity_pick_payment);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowHomeEnabled(true);
     }
 
-
     public void moveOn(View v){
-        Intent myIntent = new Intent(CartActivity.this, PickPaymentActivity.class);
-        CartActivity.this.startActivity(myIntent);
+        Intent myIntent = new Intent(PickPaymentActivity.this, PaidActivity.class);
+        PickPaymentActivity.this.startActivity(myIntent);
     }
 }

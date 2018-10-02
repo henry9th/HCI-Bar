@@ -19,9 +19,24 @@
         <activity android:name=".FoodActivity" />
         <activity android:name=".DrinksActivity" />
         <activity android:name=".DrinksListActivity" />
-        <activity android:name="org.techtown.barvel.CocktailActivity" />
-        <activity android:name="org.techtown.barvel.FavoriteActivity"></activity>
-        <activity android:name="org.techtown.barvel.HistoryActivity"></activity>
+        <activity android:name=".CocktailActivity" />
+        <activity android:name=".FavoriteActivity">
+
+        </activity>
+
+        <activity android:name=".HistoryActivity">
+
+        </activity>
+        <activity android:name=".CartActivity">
+
+        </activity>
+        <activity android:name=".PickPaymentActivity"></activity>
+        <activity android:name=".PaidActivity"></activity>
+        <activity android:name=".Pop"
+            android:theme="@style/AppTheme.CustomTheme"
+        ></activity>
     </application>
+
+
 
 </manifest>

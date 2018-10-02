@@ -15,12 +15,5 @@ public class HistoryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history_screen);
 
-        backGroundColor = (TextView) findViewById(R.id.backGroundColor);
-      //  backGroundColor.setBackgroundResource(R.color.colorPrimary);
-
-
-
-//        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
- //       setSupportActionBar(myToolbar);
     }
 }
