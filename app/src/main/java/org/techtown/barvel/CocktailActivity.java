@@ -51,7 +51,7 @@ public class CocktailActivity extends AppCompatActivity implements NavigationVie
     }
     public void onClickNext(View view) {
         Intent intent = new Intent(this, MargaritaActivity.class);
-        startActivity(intent);
+        startActivityForResult(intent, 1);
     }
     @Override
     public void onBackPressed() {
