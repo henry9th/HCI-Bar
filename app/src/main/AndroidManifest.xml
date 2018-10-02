@@ -31,6 +31,7 @@
         </activity>
         <activity android:name=".PickPaymentActivity"></activity>
         <activity android:name=".PaidActivity"></activity>
+
         <activity android:name=".Pop"
             android:theme="@style/AppTheme.CustomTheme"
         ></activity>

@@ -75,6 +75,7 @@
         android:layout_gravity="start"
         android:background="@android:color/black"
         android:fitsSystemWindows="true"
+        app:itemTextAppearance="@style/TextAppearance.AppCompat.Display1"
         app:headerLayout="@layout/nav_header_main"
         app:itemTextColor="@android:color/background_light"
         app:menu="@menu/activity_main_drawer" />
