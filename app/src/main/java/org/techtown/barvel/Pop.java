@@ -10,7 +10,6 @@ public class Pop extends Activity{
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.popwindow);
 
         DisplayMetrics dm = new DisplayMetrics();
