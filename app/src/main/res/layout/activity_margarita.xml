@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context="org.techtown.barvel.MargaritaActivity">
+
+    <ImageView
+        android:id="@+id/margaritaImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/margarita"
+        tools:paddingLeft="10dp"
+        tools:paddingTop="10dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/margaritaText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:paddingLeft="10dp"
+        android:textColor="@color/white"
+        android:text="Margarita"
+        android:layout_toRightOf="@+id/margaritaImage"
+        android:textSize="35sp"/>
+
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/margaritaText"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@android:drawable/btn_star_big_on"/>
+
+    <TextView
+        android:id="@+id/margaritaIngred"
+        android:layout_width="match_parent"
+        android:textColor="@color/white"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:layout_below="@+id/margaritaText"
+        android:layout_toRightOf="@+id/margaritaImage"
+        android:text="Tequila, Lime Juice, Cointreau"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/margaritaIngred"
+        android:textColor="@color/white"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/margaritaImage"
+        android:paddingLeft="15dp"
+        android:paddingTop="35dp"
+        android:text="$25 HKD"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/decrease"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/margaritaIngred"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:text="-"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/integer_number"
+        android:layout_width="wrap_content"
+        android:textColor="@color/white"
+        android:layout_height="51dp"
+        android:layout_alignTop="@+id/increase"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:text="0"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/increase"
+        android:layout_width="60dp"
+        android:layout_height="35dp"
+        android:layout_below="@+id/margaritaIngred"
+        android:layout_alignStart="@+id/decrease"
+        android:layout_alignLeft="@+id/decrease"
+        android:layout_marginTop="7dp"
+        android:text="+"
+        android:textStyle="bold"
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@id/margaritaImage"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:id="@+id/iceLevel"
+        android:text="Ice Level:"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/iceLevel"
+        android:id="@+id/ice"
+        android:paddingLeft="5dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:id="@+id/noIce"
+            android:buttonTint="@color/white"
+            android:textColor="@color/white"
+            android:text="No Ice"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:id="@+id/lightIce"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:text="Light Ice"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:id="@+id/normalIce"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:checked="true"
+            android:text="Normal"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:id="@+id/extraIce"
+            android:text="Extra Ice"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ice"
+        android:paddingLeft="5dp"
+        android:textColor="@color/white"
+        android:id="@+id/tequilaLevel"
+        android:text="Tequila:"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:orientation="horizontal"
+        android:layout_below="@id/tequilaLevel"
+        android:id="@+id/tequila"
+        android:paddingLeft="5dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:id="@+id/lessTequila"
+            android:text="Less"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:id="@+id/normalTequila"
+            android:checked="true"
+            android:text="Normal"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:id="@+id/extraTequila"
+            android:text="More"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tequila"
+        android:paddingLeft="5dp"
+        android:buttonTint="@color/white"
+        android:textColor="@color/white"
+        android:id="@+id/limeLevel"
+        android:text="Lime Juice:"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:buttonTint="@color/white"
+        android:orientation="horizontal"
+        android:layout_below="@id/limeLevel"
+        android:id="@+id/lime"
+        android:paddingLeft="5dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:id="@+id/lessLime"
+            android:text="Less"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:id="@+id/normalLime"
+            android:checked="true"
+            android:text="Normal"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:id="@+id/extraLime"
+            android:text="More"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lime"
+        android:paddingLeft="5dp"
+        android:text="Cointreau:"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:id="@+id/coinLevel"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:buttonTint="@color/white"
+        android:orientation="horizontal"
+        android:layout_below="@id/coinLevel"
+        android:id="@+id/coin"
+        android:paddingLeft="5dp">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:buttonTint="@color/white"
+            android:id="@+id/lessCoin"
+            android:text="Less"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:layout_height="wrap_content"
+            android:id="@+id/normalCoin"
+            android:checked="true"
+            android:text="Normal"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:buttonTint="@color/white"
+            android:layout_height="wrap_content"
+            android:id="@+id/extraCoin"
+            android:text="More"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/coin"
+        android:paddingTop="20dp"
+        android:textColor="@color/white"
+        android:id="@+id/comments"
+        android:paddingLeft="10dp"
+        android:text="Additonal Comments:"
+        android:textSize="20dp"/>
+
+    <EditText
+        android:layout_width="400dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/comments"
+        android:textColor="@color/white"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:text="ADD TO CART" />
+
+</RelativeLayout>
