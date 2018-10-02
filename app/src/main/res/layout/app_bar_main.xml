@@ -17,8 +17,17 @@
             android:layout_height="60dp"
             android:background="@android:color/black"
             app:popupTheme="@style/AppTheme.PopupOverlay"
-            app:titleMarginStart="70dp" />
+            app:titleMarginStart="70dp">
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="360dp"
+                android:onClick="toShoppingCart"
+                android:background="@drawable/shoppingcart"/>
+        </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main" />
 
 </android.support.design.widget.CoordinatorLayout>
