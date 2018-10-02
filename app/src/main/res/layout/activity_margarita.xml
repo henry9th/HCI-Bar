@@ -140,7 +140,7 @@
                 android:layout_marginLeft="0dp"
                 android:layout_marginRight="0dp"
                 android:layout_marginStart="0dp"
-                android:onClickNext=""
+                android:onClick="onClickNext"
                 android:text="ADD TO CART" />
 
             <ImageView
