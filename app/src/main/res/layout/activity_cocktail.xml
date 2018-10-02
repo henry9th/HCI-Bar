@@ -10,84 +10,91 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context="org.techtown.Barvel.CocktailActivity">
+        tools:context="org.techtown.barvel.CocktailActivity">
 
-        <ImageView
-                android:id="@+id/oldFashionedImage"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:scaleType="centerCrop"
-                app:srcCompat="@drawable/old_fashioned"
-                tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="16dp" />
-
-            <TextView
-                android:id="@+id/oldFashionedText"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:paddingLeft="15dp"
-                android:text="Old Fashioned"
-                android:layout_toRightOf="@id/oldFashionedImage"
-                android:textSize="30sp" />
-        <!--
-        <ImageView
-            android:id="@+id/star"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginStart="48dp"
-            android:layout_marginLeft="48dp"
-            android:layout_marginTop="84dp"
-            android:layout_toRightOf="@id/oldFashionedText"
-            app:srcCompat="@android:drawable/btn_star_big_off" />-->
-
-            <TextView
-                android:id="@+id/oldFashionedIngred"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:paddingLeft="15dp"
-                android:layout_toRightOf="@id/oldFashionedImage"
-                android:layout_below="@id/oldFashionedText"
-                android:text="Bourbon, Angostura Bitters, Sugar, Water"
-                android:textSize="16sp" />
-
-        <ImageView
-            android:id="@+id/cosmoImage"
+    <ImageView
+            android:id="@+id/oldFashionedImage"
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:scaleType="centerCrop"
-            app:srcCompat="@drawable/cosmo"
-            android:layout_below="@+id/oldFashionedImage"
+            app:srcCompat="@drawable/old_fashioned"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="16dp" />
 
-        <TextView
-            android:id="@+id/cosmoText"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:paddingLeft="15dp"
-            android:text="Cosmopolitan"
-            android:layout_below="@+id/oldFashionedImage"
-            android:layout_toRightOf="@+id/cosmoImage"
-            android:textSize="30sp" />
+    <TextView
+        android:id="@+id/oldFashionedText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:text="Old Fashioned"
+        android:layout_toRightOf="@id/oldFashionedImage"
+        android:textSize="30sp" />
 
-        <TextView
-            android:id="@+id/cosmoIngred"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:paddingLeft="15dp"
-            android:layout_below="@+id/cosmoText"
-            android:layout_toRightOf="@+id/cosmoImage"
-            android:text="Vodka Citron, Cranberry Juice, Cointreau, Lime Juice"
-            android:textSize="16sp" />
+    <ImageView
+        android:id="@+id/star"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="350dp"
+        app:srcCompat="@android:drawable/btn_star_big_on"/>
+
+    <TextView
+        android:id="@+id/oldFashionedIngred"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:layout_toRightOf="@id/oldFashionedImage"
+        android:layout_below="@id/oldFashionedText"
+        android:text="Bourbon, Angostura Bitters, Sugar, Water"
+        android:textSize="16sp" />
+
+    <ImageView
+        android:id="@+id/cosmoImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/cosmo"
+        android:layout_below="@+id/oldFashionedImage"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/cosmoText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:text="Cosmopolitan"
+        android:layout_below="@+id/oldFashionedImage"
+        android:layout_toRightOf="@+id/cosmoImage"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/star1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/oldFashionedIngred"
+        android:layout_marginLeft="350dp"
+        app:srcCompat="@android:drawable/btn_star_big_on"/>
+
+    <TextView
+        android:id="@+id/cosmoIngred"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:layout_below="@+id/cosmoText"
+        android:layout_toRightOf="@+id/cosmoImage"
+        android:text="Vodka Citron, Cranberry Juice, Cointreau, Lime Juice"
+        android:textSize="16sp" />
 
         <ImageView
             android:id="@+id/margaritaImage"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:layout_below="@+id/cosmoImage"
+            android:onClick="onClickNext"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/margarita"
-            android:layout_below="@+id/cosmoImage"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="16dp" />
 
@@ -95,89 +102,119 @@
             android:id="@+id/margaritaText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:paddingLeft="15dp"
-            android:text="Margarita"
             android:layout_below="@+id/cosmoImage"
             android:layout_toRightOf="@+id/margaritaImage"
+            android:onClick="onClickNext"
+            android:paddingLeft="15dp"
+            android:text="Margarita"
             android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/star2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/cosmoIngred"
+        app:srcCompat="@android:drawable/btn_star_big_on"/>
 
         <TextView
             android:id="@+id/margaritaIngred"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:paddingLeft="15dp"
             android:layout_below="@+id/margaritaText"
             android:layout_toRightOf="@+id/margaritaImage"
+            android:onClick="onClickNext"
+            android:paddingLeft="15dp"
             android:text="Tequila, Lime Juice, Cointreau"
             android:textSize="16sp" />
 
-        <ImageView
-            android:id="@+id/martiniImage"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/martini"
-            android:layout_below="@+id/margaritaImage"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="16dp" />
+    <ImageView
+        android:id="@+id/martiniImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/martini"
+        android:layout_below="@+id/margaritaImage"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
 
-        <TextView
-            android:id="@+id/martiniText"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:paddingLeft="15dp"
-            android:text="Martini"
-            android:layout_below="@+id/margaritaImage"
-            android:layout_toRightOf="@+id/martiniImage"
-            android:textSize="30sp" />
+    <TextView
+        android:id="@+id/martiniText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:text="Martini"
+        android:layout_below="@+id/margaritaImage"
+        android:layout_toRightOf="@+id/martiniImage"
+        android:textSize="30sp" />
 
-        <TextView
-            android:id="@+id/martiniIngred"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:paddingLeft="15dp"
-            android:layout_below="@+id/martiniText"
-            android:layout_toRightOf="@+id/martiniImage"
-            android:text="Gin, Dry Vermouth"
-            android:textSize="16sp" />
+    <ImageView
+        android:id="@+id/star3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/margaritaIngred"
+        app:srcCompat="@android:drawable/btn_star_big_off"/>
 
-        <ImageView
-            android:id="@+id/manhattanImage"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/manhattan"
-            android:layout_below="@+id/martiniImage"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="16dp" />
+    <TextView
+        android:id="@+id/martiniIngred"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:layout_below="@+id/martiniText"
+        android:layout_toRightOf="@+id/martiniImage"
+        android:text="Gin, Dry Vermouth"
+        android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/manhattanText"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:paddingLeft="15dp"
-            android:text="Manhattan"
-            android:layout_below="@+id/martiniImage"
-            android:layout_toRightOf="@+id/manhattanImage"
-            android:textSize="30sp" />
+    <ImageView
+        android:id="@+id/manhattanImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/manhattan"
+        android:layout_below="@+id/martiniImage"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
 
-        <TextView
-            android:id="@+id/manhattanIngred"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:paddingLeft="15dp"
-            android:layout_below="@+id/manhattanText"
-            android:layout_toRightOf="@+id/manhattanImage"
-            android:text="Whisky, Sweet Red Vermouth, Angostura Bitters"
-            android:textSize="16sp" />
+    <TextView
+        android:id="@+id/manhattanText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:text="Manhattan"
+        android:layout_below="@+id/martiniImage"
+        android:layout_toRightOf="@+id/manhattanImage"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/star4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/martiniIngred"
+        app:srcCompat="@android:drawable/btn_star_big_off"/>
+
+    <TextView
+        android:id="@+id/manhattanIngred"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:layout_below="@+id/manhattanText"
+        android:layout_toRightOf="@+id/manhattanImage"
+        android:text="Whisky, Sweet Red Vermouth, Angostura Bitters"
+        android:textSize="16sp" />
 
         <ImageView
             android:id="@+id/maryImage"
             android:layout_width="100dp"
             android:layout_height="100dp"
+            android:layout_below="@+id/manhattanImage"
+            android:onClick="onC"
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/bloody_mary"
-            android:layout_below="@+id/manhattanImage"
             tools:layout_editor_absoluteX="0dp"
             tools:layout_editor_absoluteY="16dp" />
 
@@ -185,81 +222,110 @@
             android:id="@+id/maryText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:paddingLeft="15dp"
-            android:text="Bloody Mary"
             android:layout_below="@+id/manhattanImage"
             android:layout_toRightOf="@+id/maryImage"
+            android:onClick="onC"
+            android:paddingLeft="15dp"
+            android:text="Bloody Mary"
             android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/star5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/manhattanIngred"
+        app:srcCompat="@android:drawable/btn_star_big_off"/>
 
         <TextView
             android:id="@+id/maryIngred"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:paddingLeft="15dp"
             android:layout_below="@+id/maryText"
             android:layout_toRightOf="@+id/maryImage"
+            android:onClick="onC"
+            android:paddingLeft="15dp"
             android:text="Tomato Juice, Vodka, Lemon Juice, Worcestershire Sauce, Pepper, Tabasco, Salt"
             android:textSize="14sp" />
 
-        <ImageView
-            android:id="@+id/mojitoImage"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/mojito"
-            android:layout_below="@+id/maryImage"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="16dp" />
+    <ImageView
+        android:id="@+id/mojitoImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/mojito"
+        android:layout_below="@+id/maryImage"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
 
-        <TextView
-            android:id="@+id/mojitoText"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:paddingLeft="15dp"
-            android:text="Mojito"
-            android:layout_below="@+id/maryImage"
-            android:layout_toRightOf="@+id/mojitoImage"
-            android:textSize="30sp" />
+    <TextView
+        android:id="@+id/mojitoText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:text="Mojito"
+        android:layout_below="@+id/maryImage"
+        android:layout_toRightOf="@+id/mojitoImage"
+        android:textSize="30sp" />
 
-        <TextView
-            android:id="@+id/mojitoIngred"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:paddingLeft="15dp"
-            android:layout_below="@+id/mojitoText"
-            android:layout_toRightOf="@+id/mojitoImage"
-            android:text="White Rum, Lime Juice, Soda Water, Mint, Sugar"
-            android:textSize="16sp" />
+    <ImageView
+        android:id="@+id/star6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/maryIngred"
+        app:srcCompat="@android:drawable/btn_star_big_off"/>
 
-        <ImageView
-            android:id="@+id/maiImage"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:scaleType="centerCrop"
-            app:srcCompat="@drawable/mai"
-            android:layout_below="@+id/mojitoImage"
-            tools:layout_editor_absoluteX="0dp"
-            tools:layout_editor_absoluteY="16dp" />
+    <TextView
+        android:id="@+id/mojitoIngred"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:layout_below="@+id/mojitoText"
+        android:layout_toRightOf="@+id/mojitoImage"
+        android:text="White Rum, Lime Juice, Soda Water, Mint, Sugar"
+        android:textSize="16sp" />
 
-        <TextView
-            android:id="@+id/maiText"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:paddingLeft="15dp"
-            android:text="Mai Tai"
-            android:layout_below="@+id/mojitoImage"
-            android:layout_toRightOf="@+id/maiImage"
-            android:textSize="30sp" />
+    <ImageView
+        android:id="@+id/maiImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/mai"
+        android:layout_below="@+id/mojitoImage"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
 
-        <TextView
-            android:id="@+id/maiIngred"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:paddingLeft="15dp"
-            android:layout_below="@+id/maiText"
-            android:layout_toRightOf="@+id/maiImage"
-            android:text="White Rum, Dark Rum, Lime Juice, Orange Curacao, Orgeat Syrup"
-            android:textSize="16sp" />
+    <TextView
+        android:id="@+id/maiText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:text="Mai Tai"
+        android:layout_below="@+id/mojitoImage"
+        android:layout_toRightOf="@+id/maiImage"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/star7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="350dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/mojitoIngred"
+        app:srcCompat="@android:drawable/btn_star_big_off"/>
+
+    <TextView
+        android:id="@+id/maiIngred"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:layout_below="@+id/maiText"
+        android:layout_toRightOf="@+id/maiImage"
+        android:text="White Rum, Dark Rum, Lime Juice, Orange Curacao, Orgeat Syrup"
+        android:textSize="16sp" />
 
 
     </RelativeLayout>
