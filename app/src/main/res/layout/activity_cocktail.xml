@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:background="@color/black"
         tools:context="org.techtown.barvel.CocktailActivity">
 
         <ImageView
@@ -23,10 +24,12 @@
 
         <TextView
             android:id="@+id/oldFashionedText"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:paddingLeft="15dp"
             android:text="Old Fashioned"
+            android:textColor="@color/white"
             android:layout_toRightOf="@id/oldFashionedImage"
             android:textSize="30sp" />
 
@@ -43,6 +46,7 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:paddingLeft="15dp"
+            android:textColor="@color/white"
             android:layout_toRightOf="@id/oldFashionedImage"
             android:layout_below="@id/oldFashionedText"
             android:text="Bourbon, Angostura Bitters, Sugar, Water"
@@ -62,8 +66,10 @@
             android:id="@+id/cosmoText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:textStyle="bold"
             android:paddingLeft="15dp"
             android:text="Cosmopolitan"
+            android:textColor="@color/white"
             android:layout_below="@+id/oldFashionedImage"
             android:layout_toRightOf="@+id/cosmoImage"
             android:textSize="30sp" />
@@ -79,6 +85,7 @@
 
         <TextView
             android:id="@+id/cosmoIngred"
+            android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:paddingLeft="15dp"
@@ -100,6 +107,8 @@
 
         <TextView
             android:id="@+id/margaritaText"
+            android:textColor="@color/white"
+            android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_below="@+id/cosmoImage"
@@ -120,6 +129,7 @@
 
         <TextView
             android:id="@+id/margaritaIngred"
+            android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_below="@+id/margaritaText"
@@ -141,8 +151,10 @@
 
         <TextView
             android:id="@+id/martiniText"
+            android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:textStyle="bold"
             android:paddingLeft="15dp"
             android:text="Martini"
             android:layout_below="@+id/margaritaImage"
@@ -161,6 +173,7 @@
         <TextView
             android:id="@+id/martiniIngred"
             android:layout_width="match_parent"
+            android:textColor="@color/white"
             android:layout_height="50dp"
             android:paddingLeft="15dp"
             android:layout_below="@+id/martiniText"
@@ -183,6 +196,8 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:paddingLeft="15dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
             android:text="Manhattan"
             android:layout_below="@+id/martiniImage"
             android:layout_toRightOf="@+id/manhattanImage"
@@ -201,6 +216,7 @@
             android:id="@+id/manhattanIngred"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:textColor="@color/white"
             android:paddingLeft="15dp"
             android:layout_below="@+id/manhattanText"
             android:layout_toRightOf="@+id/manhattanImage"
@@ -222,6 +238,8 @@
             android:id="@+id/maryText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
             android:layout_below="@+id/manhattanImage"
             android:layout_toRightOf="@+id/maryImage"
             android:onClick="onC"
@@ -242,6 +260,7 @@
             android:id="@+id/maryIngred"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:textColor="@color/white"
             android:layout_below="@+id/maryText"
             android:layout_toRightOf="@+id/maryImage"
             android:onClick="onC"
@@ -263,7 +282,9 @@
             android:id="@+id/mojitoText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:textColor="@color/white"
             android:paddingLeft="15dp"
+            android:textStyle="bold"
             android:text="Mojito"
             android:layout_below="@+id/maryImage"
             android:layout_toRightOf="@+id/mojitoImage"
@@ -280,6 +301,7 @@
 
         <TextView
             android:id="@+id/mojitoIngred"
+            android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:paddingLeft="15dp"
@@ -302,8 +324,10 @@
             android:id="@+id/maiText"
             android:layout_width="match_parent"
             android:layout_height="50dp"
+            android:textColor="@color/white"
             android:paddingLeft="15dp"
             android:text="Mai Tai"
+            android:textStyle="bold"
             android:layout_below="@+id/mojitoImage"
             android:layout_toRightOf="@+id/maiImage"
             android:textSize="30sp" />
@@ -319,6 +343,7 @@
 
         <TextView
             android:id="@+id/maiIngred"
+            android:textColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:paddingLeft="15dp"
