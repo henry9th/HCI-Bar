@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
     tools:context=".MainActivity">
 
     <android.support.design.widget.AppBarLayout
@@ -30,7 +31,8 @@
         <ScrollView
             android:id="@+id/ScrollView01"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:background="@android:color/background_dark">
 
             <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -56,7 +58,8 @@
                     android:layout_toRightOf="@id/oldFashionedImage"
                     android:paddingLeft="15dp"
                     android:text="Old Fashioned"
-                    android:textSize="30sp" />
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:id="@+id/star"
@@ -64,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="350dp"
                     android:layout_marginTop="5dp"
-                    app:srcCompat="@android:drawable/btn_star_big_off" />
+                    app:srcCompat="@android:drawable/btn_star_big_on" />
 
                 <TextView
                     android:id="@+id/oldFashionedIngred"
@@ -74,6 +77,94 @@
                     android:layout_toRightOf="@id/oldFashionedImage"
                     android:paddingLeft="15dp"
                     android:text="Bourbon, Angostura Bitters, Sugar, Water"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/cosmoImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/oldFashionedImage"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/cosmo"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <TextView
+                    android:id="@+id/cosmoText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/oldFashionedImage"
+                    android:layout_toRightOf="@+id/cosmoImage"
+                    android:paddingLeft="15dp"
+                    android:text="Cosmopolitan"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/star1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/oldFashionedIngred"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@android:drawable/btn_star_big_on" />
+
+                <TextView
+                    android:id="@+id/cosmoIngred"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/cosmoText"
+                    android:layout_toRightOf="@+id/cosmoImage"
+                    android:paddingLeft="15dp"
+                    android:text="Vodka Citron, Cranberry Juice, Cointreau, Lime Juice"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/margaritaImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_below="@+id/cosmoImage"
+                    android:onClick="onClickNext"
+                    android:scaleType="centerCrop"
+                    app:srcCompat="@drawable/margarita"
+                    tools:layout_editor_absoluteX="0dp"
+                    tools:layout_editor_absoluteY="16dp" />
+
+                <TextView
+                    android:id="@+id/margaritaText"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/cosmoImage"
+                    android:layout_toRightOf="@+id/margaritaImage"
+                    android:onClick="onClickNext"
+                    android:paddingLeft="15dp"
+                    android:text="Margarita"
+                    android:textColor="@android:color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/star2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cosmoIngred"
+                    android:layout_marginLeft="350dp"
+                    android:layout_marginTop="5dp"
+                    app:srcCompat="@android:drawable/btn_star_big_on" />
+
+                <TextView
+                    android:id="@+id/margaritaIngred"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/margaritaText"
+                    android:layout_toRightOf="@+id/margaritaImage"
+                    android:onClick="onClickNext"
+                    android:paddingLeft="15dp"
+                    android:text="Tequila, Lime Juice, Cointreau"
+                    android:textColor="@android:color/white"
                     android:textSize="16sp" />
 
 

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="350dp"
     android:layout_height="475dp"
     android:layout_gravity="center"
@@ -24,7 +25,8 @@
         android:text="Please Pick Up Your Order at the Bar"
         android:textColor="@color/white"
         android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:fontFamily="casual" />
 
     <TextView
         android:id="@+id/exchangers"
@@ -32,6 +34,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="5dp"
+        android:fontFamily="casual"
+        android:includeFontPadding="true"
         android:text="Exchangers"
-        android:textColor="@android:color/background_light" />
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp" />
 </LinearLayout>
