@@ -23,7 +23,8 @@
         <include
             layout="@layout/app_bar_main"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -50,6 +51,7 @@
                 android:layout_height="35dp"
                 android:layout_alignLeft="@+id/decrease"
                 android:layout_alignStart="@+id/decrease"
+                android:onClick="increaseInteger"
                 android:layout_below="@+id/margaritaIngred"
                 android:text="+"
                 android:textSize="15sp"
@@ -136,11 +138,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
                 android:layout_alignParentBottom="true"
-                android:layout_marginEnd="0dp"
-                android:layout_marginLeft="0dp"
-                android:layout_marginRight="0dp"
-                android:layout_marginStart="0dp"
-                android:onClickNext=""
+                android:onClick="onClickNext"
+                android:isScrollContainer="false"
                 android:text="ADD TO CART" />
 
             <ImageView
@@ -175,17 +174,20 @@
                 android:textSize="20dp" />
 
             <EditText
+                android:id="@+id/commentBox"
                 android:layout_width="400dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/comments"
                 android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="6dp"
-                android:isScrollContainer="true"
                 android:minHeight="100dp"
-                android:inputType="textMultiLine"
+                android:gravity="start"
+                android:textAlignment="textStart"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:hint="Type your comments here."
+                android:background="@color/white"
+                android:inputType="text"
                 android:textColor="@color/white">
-                <requestFocus />
             </EditText>
 
             <ImageView
@@ -208,6 +210,7 @@
                 android:layout_marginEnd="25dp"
                 android:layout_marginRight="25dp"
                 android:layout_marginTop="70dp"
+                android:onClick="decreaseInteger"
                 android:text="-"
                 android:textSize="15sp"
                 android:textStyle="bold" />

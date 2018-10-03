@@ -112,6 +112,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
+    public void toShoppingCart(View view) {
+        Intent intent = new Intent(this, CartActivity.class);
+        startActivityForResult(intent, 1);
+    }
 
 
 
