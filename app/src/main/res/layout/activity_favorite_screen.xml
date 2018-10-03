@@ -1,176 +1,166 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/background_dark"
-    tools:context=".MainActivity">
+    android:fitsSystemWindows="true"
+    app:theme="@style/drawer"
+    tools:openDrawer="start">
 
-    <android.support.design.widget.AppBarLayout
+    <include
+        layout="@layout/app_bar_main_two"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="match_parent" />
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar2"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="65dp">
+
+        <ImageView
+            android:id="@+id/oldFashionedImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/old_fashioned"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <TextView
+            android:id="@+id/oldFashionedText"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="#40361e"
-            app:popupTheme="@style/AppTheme.PopupOverlay">
+            android:layout_height="50dp"
+            android:layout_toRightOf="@id/oldFashionedImage"
+            android:paddingLeft="15dp"
+            android:text="Old Fashioned"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/toolbar_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="Favorites"
-                android:textSize="24sp" />
-        </android.support.v7.widget.Toolbar>
-
-        <ScrollView
-            android:id="@+id/ScrollView01"
+        <ImageView
+            android:id="@+id/star"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@android:color/background_dark">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
 
-            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                tools:context="org.techtown.barvel.CocktailActivity">
+        <TextView
+            android:id="@+id/oldFashionedIngred"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/oldFashionedText"
+            android:layout_toRightOf="@id/oldFashionedImage"
+            android:paddingLeft="15dp"
+            android:text="Bourbon, Angostura Bitters, Sugar, Water"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
 
-                <ImageView
-                    android:id="@+id/oldFashionedImage"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/old_fashioned"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="16dp" />
+        <ImageView
+            android:id="@+id/cosmoImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/oldFashionedImage"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/cosmo"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp" />
 
-                <TextView
-                    android:id="@+id/oldFashionedText"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_toRightOf="@id/oldFashionedImage"
-                    android:paddingLeft="15dp"
-                    android:text="Old Fashioned"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
+        <TextView
+            android:id="@+id/cosmoText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/oldFashionedImage"
+            android:layout_toRightOf="@+id/cosmoImage"
+            android:paddingLeft="15dp"
+            android:text="Cosmopolitan"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-                <ImageView
-                    android:id="@+id/star"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="350dp"
-                    android:layout_marginTop="5dp"
-                    app:srcCompat="@android:drawable/btn_star_big_on" />
+        <ImageView
+            android:id="@+id/star1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/oldFashionedIngred"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
 
-                <TextView
-                    android:id="@+id/oldFashionedIngred"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_below="@id/oldFashionedText"
-                    android:layout_toRightOf="@id/oldFashionedImage"
-                    android:paddingLeft="15dp"
-                    android:text="Bourbon, Angostura Bitters, Sugar, Water"
-                    android:textColor="@android:color/white"
-                    android:textSize="16sp" />
+        <TextView
+            android:id="@+id/cosmoIngred"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cosmoText"
+            android:layout_toRightOf="@+id/cosmoImage"
+            android:paddingLeft="15dp"
+            android:text="Vodka Citron, Cranberry Juice, Cointreau, Lime Juice"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
 
-                <ImageView
-                    android:id="@+id/cosmoImage"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_below="@+id/oldFashionedImage"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/cosmo"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="16dp" />
+        <ImageView
+            android:id="@+id/margaritaImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/cosmoImage"
+            android:onClick="onClickNext"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/margarita"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp" />
 
-                <TextView
-                    android:id="@+id/cosmoText"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_below="@+id/oldFashionedImage"
-                    android:layout_toRightOf="@+id/cosmoImage"
-                    android:paddingLeft="15dp"
-                    android:text="Cosmopolitan"
-                    android:textColor="@android:color/white"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
+        <TextView
+            android:id="@+id/margaritaText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/cosmoImage"
+            android:layout_toRightOf="@+id/margaritaImage"
+            android:onClick="onClickNext"
+            android:paddingLeft="15dp"
+            android:text="Margarita"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
 
-                <ImageView
-                    android:id="@+id/star1"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/oldFashionedIngred"
-                    android:layout_marginLeft="350dp"
-                    android:layout_marginTop="5dp"
-                    app:srcCompat="@android:drawable/btn_star_big_on" />
+        <ImageView
+            android:id="@+id/star2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cosmoIngred"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="5dp"
+            app:srcCompat="@android:drawable/btn_star_big_on" />
 
-                <TextView
-                    android:id="@+id/cosmoIngred"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_below="@+id/cosmoText"
-                    android:layout_toRightOf="@+id/cosmoImage"
-                    android:paddingLeft="15dp"
-                    android:text="Vodka Citron, Cranberry Juice, Cointreau, Lime Juice"
-                    android:textColor="@android:color/white"
-                    android:textSize="16sp" />
-
-                <ImageView
-                    android:id="@+id/margaritaImage"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_below="@+id/cosmoImage"
-                    android:onClick="onClickNext"
-                    android:scaleType="centerCrop"
-                    app:srcCompat="@drawable/margarita"
-                    tools:layout_editor_absoluteX="0dp"
-                    tools:layout_editor_absoluteY="16dp" />
-
-                <TextView
-                    android:id="@+id/margaritaText"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_below="@+id/cosmoImage"
-                    android:layout_toRightOf="@+id/margaritaImage"
-                    android:onClick="onClickNext"
-                    android:paddingLeft="15dp"
-                    android:text="Margarita"
-                    android:textColor="@android:color/white"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
-
-                <ImageView
-                    android:id="@+id/star2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/cosmoIngred"
-                    android:layout_marginLeft="350dp"
-                    android:layout_marginTop="5dp"
-                    app:srcCompat="@android:drawable/btn_star_big_on" />
-
-                <TextView
-                    android:id="@+id/margaritaIngred"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_below="@+id/margaritaText"
-                    android:layout_toRightOf="@+id/margaritaImage"
-                    android:onClick="onClickNext"
-                    android:paddingLeft="15dp"
-                    android:text="Tequila, Lime Juice, Cointreau"
-                    android:textColor="@android:color/white"
-                    android:textSize="16sp" />
+        <TextView
+            android:id="@+id/margaritaIngred"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/margaritaText"
+            android:layout_toRightOf="@+id/margaritaImage"
+            android:onClick="onClickNext"
+            android:paddingLeft="15dp"
+            android:text="Tequila, Lime Juice, Cointreau"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
 
 
-            </RelativeLayout>
-        </ScrollView>
+    </RelativeLayout>
 
-    </android.support.design.widget.AppBarLayout>
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@android:color/black"
+        android:fitsSystemWindows="true"
+        app:headerLayout="@layout/nav_header_main"
+        app:itemTextAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:itemTextColor="@android:color/background_light"
+        app:menu="@menu/activity_main_drawer" />
 
-</android.support.design.widget.CoordinatorLayout>
+</android.support.v4.widget.DrawerLayout>
