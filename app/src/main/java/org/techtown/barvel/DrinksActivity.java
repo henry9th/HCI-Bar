@@ -43,7 +43,7 @@ public class DrinksActivity extends AppCompatActivity implements NavigationView.
             if (toolbar.getChildAt(i) instanceof ImageButton) {
                 toolbar.getChildAt(i).setPadding(20,10,0,0);
             } else {
-                toolbar.getChildAt(i).setPadding(20,10,0,0);
+                toolbar.getChildAt(i).setPadding(40,10,0,0);
             }
             toolbar.getChildAt(i).setScaleX(3.0f);
             toolbar.getChildAt(i).setScaleY(3.0f);
